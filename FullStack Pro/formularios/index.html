@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizando formulários</title>
+</head>
+<body>
+
+    <h1>Formulários</h1>
+    <form action="">
+       
+       <label for="email">Seu email</label>
+       <input type="email" name="email" id="email"> <br><br>
+
+        <label for="pnome">Seu Primeiro nome</label>
+        <input type="text" id="pnome" name="pnome" placeholder="Seu Primeiro nome" required> <br><br>
+
+        <label for="unome">Ultimo nome</label>
+        <input type="text" id="unome" name="unome" placeholder="Ultimo nome" required> <br><br>
+
+        <!-- Tipo Radio -->
+<Strong><label>Qual seu nível como programador atualmente?</label></Strong><br>
+<label>
+    <input type="radio" name="nivel" value="Iniciante" checked> Sou Iniciante
+</label>    
+    <label>
+    <input type="radio" name="nivel" value="medio">Comecei a pouco tempo.
+    </label>
+<label>
+    <input type="radio" name="nivel" value="avançado">Sou avançado.
+</label><br><br>
+
+<!-- Tipo select para selecionar itens -->
+<label for="escolaridade"> 
+    <strong>Sua escolaridade</strong>
+<!-- </label> -->
+<select id="escolaridade">
+    <option selected disabled value="">Selecione</option>
+    <option>Educação Basica</option>
+    <option>Ensino medio</option>
+    <option>Ensino Superior</option>
+    <option>Pós graduação</option>
+</select> <br><br>
+
+<!-- Tipos de checkbox -->
+
+<label>
+    <strong>Selecione as tecnologias que você conhece:</strong>
+</label><br><br>
+
+<input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+<label for="tecnologia1">HTML</label>
+
+<input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+<label for="tecnologia2">CSS</label>
+
+<input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+<label for="tecnologia3">JavaScript</label>
+
+<br><br>
+
+<!-- Tipo data -->
+
+<label for="nascimento">Data nascimento</label>
+<input type="date" name="nascimento" id="nascimento">
+
+<br><br>
+
+<input type="submit" value="Cadastrar"><br><br>
+
+<hr><br><br>
+
+<h1>Adicionando vídeos</h1>
+
+<video poster="thumb.png" width="420" height="340" controls loop muted >
+    <source src="natureza.mp4" type="video/mp4">
+</video><br><br>
+
+<hr>
+
+<h1>Adicionando audio</h1>
+<audio controls>
+    <source src="curso.mp3" type="audio/mpeg">
+</audio><br><br>
+
+<h1>Tag Detail e Sumary</h1>
+
+<details open>
+    <summary>Motor 1.6</summary>
+    <p>O carro possui um motor super forte e rapido</p>
+</details>
+<details>
+    <summary>Conforto</summary>
+    <p>O carro de luxo com sensor de ré, cameras e som de qualidade. </p>
+</details>    
+<details>
+    <summary>Preço</summary>
+    <p>12x de R$1.000</p>
+</details><br><br>
+
+<hr>
+
+<h1>Aplicando datalist</h1>
+
+<form>
+    <input list="carros" name="carro" placeholder="Procurando algum carro?">
+    <datalist id="carros">
+        <option value="Gol 1.6"></option>
+        <option value="Golf 1.4"></option>
+        <option value="BMW 1.0"></option>
+        <option value="Onix 1.0"></option>   
+    </datalist>
+</form>
+
+
+
+</body>
+</html>
