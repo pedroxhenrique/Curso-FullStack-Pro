@@ -4,6 +4,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    height: 180vh;
 }
 
 .conteiner{
@@ -18,5 +19,19 @@ body{
    border: 5px solid red; 
 
    border-radius: 15px;
+   position: static
+}
 
+/* 
+> 1. Por padrão temos o Static, ou seja estatico.
+> 2. Relative > Elemento e posicionado em relação  a sua posição normal.
+(Top, bottom, left, right)
+*/
+
+.area{
+    position: relative;
+    top: 105px;
+    left: 90px;
+
+    border: 5px solid green;
 }
