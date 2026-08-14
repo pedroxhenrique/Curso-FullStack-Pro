@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
 }
 
 body{
@@ -7,31 +10,33 @@ body{
     height: 180vh;
 }
 
-.conteiner{
+.container{
     background-color: #121212;
-    width: 700px;
-    color: #ffffff;
-    
- margin: auto;
+    height: 500px;
+    margin: 50px;
 
-   padding: 30px;
-
-   border: 5px solid red; 
-
-   border-radius: 15px;
-   position: static
+    /* Ativando flexbox no container */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-/* 
-> 1. Por padrão temos o Static, ou seja estatico.
-> 2. Relative > Elemento e posicionado em relação  a sua posição normal.
-(Top, bottom, left, right)
-*/
-
 .area{
-    position: relative;
-    top: 105px;
-    left: 90px;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+}
 
-    border: 5px solid green;
+.item-1{
+    background-color: red;
+}
+
+.item-2{
+    background-color: blue;
+    align-self: flex-start;
+}
+
+.item-3{
+    background-color: darkgreen;
 }
